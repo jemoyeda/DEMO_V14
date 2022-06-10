@@ -7,7 +7,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Bienes Raices" web_icon="publicidad_mobiliaria,static/description/icon.png" id="bienes_menu"/>
-    <menuitem action="bienes_raices_action" name="Bienes Raices" id="bienes_menu" parent="bienes_menus"/>
+    <menuitem name="Bienes Raices" web_icon="publicidad_mobiliaria,static/description/icon.png" id="bienes_menus"/>
+    <menuitem name="Bienes Raices" id="bienes_menu" parent="bienes_menus" action="bienes_raices_action"/>
 
 </odoo>
