@@ -1,6 +1,6 @@
 from odoo import models, fields
 
 class bienes(models.Model):
-    _name = 'bienes.raices'
+    _name = 'bienes'
 
     titulo = fields.Char(string='Titulo')
