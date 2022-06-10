@@ -28,7 +28,6 @@
     # Siempre cargar las vistas a utilizar en el modulo
     'data': [
         'views/bienes.xml',
-        'views/propiedades.xml',
         'security/ir.model.access.csv'
     ],
     
