@@ -8,6 +8,6 @@
     </record>
 
     <menuitem name="Bienes Raices" web_icon="publicidad_mobiliaria,static/description/icon.png" id="bienes_menu"/>
-    <menuitem name="Bienes Raices" id="bienes_menu" parent="bienes_menu" action="bienes_raices_action"/>
+    <menuitem name="Bienes Raices" id="bienes_menu" parent="bienes_raices_menu" action="bienes_raices_action"/>
 
 </odoo>
