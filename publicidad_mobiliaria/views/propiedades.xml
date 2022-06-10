@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuitem id="bienes_menu" name="Propiedades">
+    <menuitem id="bienes_menu_primer_nivel" name="First level">
+        <menuitem id="bienes_raices_action" action="bienes_raices_action"/>
+    </menuitem>
+</menuitem>

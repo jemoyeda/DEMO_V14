@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="bienes_raices_action" model="ir.actions.act_window">
-        <field name="name">bienes.raices.view</field>
+        <field name="name">Bienes Raices</field>
         <field name="res_model">bienes.raices</field>
         <field name="view_mode">tree,form</field>
     </record>
