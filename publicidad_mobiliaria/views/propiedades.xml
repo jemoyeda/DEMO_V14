@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!--Vista formulario para propiedades-->
+    <!--Vista formulario/form para propiedades-->
     <record id="propiedades_form_view" model="ir.ui.view">
         <field name="name">propiedades.form.view</field>
         <field name="model">bienes.raices</field>
@@ -11,6 +11,7 @@
             <form string="Propiedades">
                 <sheet>
                     <group>
+                        <field name="imagen"  widget='image' class='oe_avatar'/>
                         <field name="titulo"/>
                         <field name="descripcion"/>
                         <field name="codigo_postal"/>
@@ -21,7 +22,7 @@
         </field>
     </record>
 
-    <!--Vista lista para propiedades-->
+    <!--Vista lista/tree para propiedades-->
     <record id="view_tree_propiedades_ui" model="ir.ui.view">
         <field name="name">propiedades.tree.view</field>
         <field name="model">bienes.raices</field>
