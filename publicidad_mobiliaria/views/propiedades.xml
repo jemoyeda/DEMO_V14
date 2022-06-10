@@ -11,7 +11,7 @@
             <form string="Propiedades">
                 <sheet>
                     <group>
-                        <!--<field name="imagen"  widget='image' class='oe_avatar'/>-->
+                        <field name="imagen"  widget='image' class='oe_avatar'/>
                         <field name="titulo"/>
                         <field name="descripcion"/>
                         <field name="codigo_postal"/>
