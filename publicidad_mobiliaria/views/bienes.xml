@@ -3,7 +3,7 @@
 
     <record id="bienes_raices_action" model="ir.actions.act_window">
         <field name="name">bienes.raices.view</field>
-        <field name="res_model">bienes</field>
+        <field name="res_model">model</field>
         <field name="view_mode">tree,form</field>
     </record>
 
