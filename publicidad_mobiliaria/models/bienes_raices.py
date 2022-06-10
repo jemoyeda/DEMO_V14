@@ -1,7 +1,7 @@
 from odoo import models 
 
-class bienes_raices(models.Model):
-    _name = 'bienes_raices'
+class inmobiliario(models.Model):
+    _name = 'inmobiliario'
     _description = 'CRM bienes raices'
 
-    titulo = fields.Char(string='')
+    titulo = fields.Char(string='Titulo')
