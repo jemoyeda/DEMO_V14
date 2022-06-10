@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #Módulo creado por Ing. Industrial Hermes Colina
 {
-    'name': "bienes_raices",
+    'name': "CRM Bienes Raices",
 
     'summary': """
         CRM para la gestion de clientes en el negocio de Bienes raices, para un negocio exitosos""",
