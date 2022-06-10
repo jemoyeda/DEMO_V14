@@ -8,7 +8,6 @@
     </record>
 
     <menuitem name="Bienes Raices" web_icon="publicidad_mobiliaria,static/description/icon.png" id="bienes_menus"/>
-    <menuitem name="Bienes" id="bienes_menus"/>
     <menuitem name="Propiedades" id="bienes_menu" parent="bienes_menus" action="bienes_raices_action"/>
     <menuitem name="Clientes" id="bienes_menu" parent="bienes_menu" action="bienes_raices_action"/>
 
