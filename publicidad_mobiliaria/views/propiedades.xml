@@ -12,6 +12,7 @@
                 <sheet>
                     <group>
                         <field name='imagen' widget='image' class='oe.avatar'/>
+                        <field name="titulo"/>
                         <field name="descripcion"/>
                         <field name="codigo_postal"/>
                         <field name="precio"/>        
