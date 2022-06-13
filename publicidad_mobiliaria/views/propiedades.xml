@@ -75,12 +75,15 @@
                 <field name="categoria_id" string='Nombre de la categoria'/>
 
                 <!--Filtro rapido-->
-                <filter name="categoria" string="categoria" domain="[('categoria_id', '=', 'Libros')]"/>
+                <filter name="Categoria" string="categoria" domain="[('categoria_id', '=', 'Libros')]"/>
 
                 <!--Agrupacion rapida-->
                 <group expand="0" string="Agrupar por" colspan='12' col='10'>
-                    <filter name="categoria" string="categoria" context="{'group_by':'categoria_id'}"/>
+                    <filter name="Categoria" string="categoria" context="{'group_by':'categoria_id'}"/>
                 </group>
+                <searchpanel>
+                    <field name="categoria_id" string='Categorias de las propiedades' icon='fa-users'/>
+                </searchpanel>
             </search>
         </field>
     </record>

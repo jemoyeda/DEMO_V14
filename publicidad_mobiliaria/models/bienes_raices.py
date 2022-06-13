@@ -16,4 +16,3 @@ class categoria(models.Model):
     _name = 'categoria.bienes'
 
     name  = fields.Char(string='Nombre de la categoria')
-    
