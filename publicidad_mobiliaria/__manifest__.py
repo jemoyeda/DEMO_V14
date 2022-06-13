@@ -22,7 +22,7 @@
     
     #Siempre se debe agregar los módulos de los que depende el nuevo módulo para evitar errores
     #inesperados. (Ej. TypeError, ¡tal módulo no existe!)
-    'depends': ['base'],
+    'depends': ['base', 'account_accountant'],
 
     # Siempre cargar las vistas a utilizar en el modulo
     'data': [
