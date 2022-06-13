@@ -7,7 +7,7 @@ class bienes(models.Model):
     titulo = fields.Char(string='Titulo', required=True)
     descripcion  = fields.Text(string='Descripcion', required=True)
     codigo_postal  = fields.Char(string='Codigo postal')
-    precio = fields.Monetary(string='Precio')
+    precio = fields.Float(string='Precio')
     imagen = fields.Binary(string='Foto de la propiedad')
     categoria_id = fields.Many2one(string='Categoria', comodel_name='categoria.bienes', ondelete='restrict')
     fecha_disponibilidad  = fields.Date(string='Fecha de disponibilidad')
