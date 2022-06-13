@@ -63,7 +63,7 @@
     <!--Vista busqueda para propiedades-->
     <record id="propiedades_view_search" model="ir.ui.view">
         <field name="name">propiedades.view.search</field>
-        <field name="model">bienes_raices</field>
+        <field name="model">bienes.raices</field>
         <field name="arch" type="xml">
             <search>
                 <field name="titulo" string='Nombre de la propiedad'/>
