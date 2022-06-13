@@ -1,4 +1,3 @@
-from typing_extensions import Required
 from odoo import models, fields
 
 class bienes(models.Model):
@@ -9,4 +8,3 @@ class bienes(models.Model):
     descripcion  = fields.Text(string='Descripcion', required=True)
     codigo_postal  = fields.Char(string='Codigo postal')
     precio  = fields.Float(string='Precio estimado', required=True)
-    
