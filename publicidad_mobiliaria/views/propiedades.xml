@@ -51,7 +51,7 @@
                     <t t-name="kanban-box">
                         <div class='oe_kanban_global_click'>
                             <div class='o_kanban_image'>
-                                <img t-att-src="kanban_image('bienes_raices','image',record.id.raw_value)" alt="image"/>
+                                <img t-att-src="kanban_image('bienes_raices','imagen',record.id.value)" alt="image"/>
                             </div>
                         </div>
                     </t>
