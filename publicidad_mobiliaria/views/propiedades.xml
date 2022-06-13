@@ -34,4 +34,29 @@
             </tree>
         </field>
     </record>
+
+    <!--Vista Kanban para propiedades-->
+    <record id="propiedades_kanban_view" model="ir.ui.view">
+        <field name="name">propiedades.kanabn.view</field>
+        <field name="model">bienes.raices</field>
+        <field name="type">kanban</field>
+        <field name="mode">primary</field>
+        <field name="priority" eval="16" />
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="titulo"/>
+                <field name="descripcion"/>
+                <field name="precio"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class='oe_kanban_global_click'>
+                            <div class='o_kanban_image'>
+                                <img t-att-src="kanban_image('bienes_raices','image',record.id.raw_value)" alt="image"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
 </odoo>

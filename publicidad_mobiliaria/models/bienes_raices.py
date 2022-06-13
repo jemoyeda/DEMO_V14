@@ -7,6 +7,6 @@ class bienes(models.Model):
     titulo = fields.Char(string='Titulo', required=True)
     descripcion  = fields.Text(string='Descripcion', required=True)
     codigo_postal  = fields.Char(string='Codigo postal')
-    precio  = fields.Float(string='Precio estimado', required=True)
-    imagen  = fields.Binary(string='Imagen')
+    precio  = fields.Float(string='Precio', required=True)
+    imagen  = fields.Binary(string='Foto de la propiedad')
     
