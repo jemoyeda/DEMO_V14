@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 #Módulo creado por Ing. Industrial Hermes Colina
 {
