@@ -1,1 +1,0 @@
-from . import bienes_raices
