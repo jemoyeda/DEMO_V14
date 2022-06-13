@@ -50,8 +50,8 @@
                 <templates>
                     <t t-name="kanban-box">
                         <div class='oe_kanban_global_click'>
-                            <div class='o_kanban_image'>
-                                <img t-att-src="kanban_image('bienes_raices','imagen',record.id.value)" alt="image"/>
+                            <div class='o_kanban_imagen'>
+                                <img t-att-src="kanban_imagen('bienes_raices','imagen',record.id.raw_value)" alt="Imagen"/>
                             </div>
                         </div>
                     </t>
