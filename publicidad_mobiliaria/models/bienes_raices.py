@@ -18,9 +18,9 @@ class bienes(models.Model):
     jardin  = fields.Boolean(string='Jardin')
     jardin_area  = fields.Integer(string='Areas del jardin')
     jardin_orientacion  = fields.Selection(string='Orientacion del jardin', selection=[
-        ('Norte', 'Norte')
-        ('Sur', 'Sur')        
-        ('Este', 'Este')
+        ('Norte', 'Norte'),
+        ('Sur', 'Sur'),        
+        ('Este', 'Este'),
         ('Oeste', 'Oeste')
         ])
     

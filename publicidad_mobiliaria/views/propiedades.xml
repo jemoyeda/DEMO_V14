@@ -14,7 +14,7 @@
                         <field name='imagen' widget='image' class='oe.avatar'/>
                         <field name="titulo"/>
                         <field name="descripcion"/>
-                        <field name="categoria_id" />
+                        <field name="categoria_id"/>
                         <field name="codigo_postal"/>
                         <field name="fecha_disponibilidad"/>
                         <field name="dormitorios"/>
