@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--Vista formulario/form para propiedades-->
+    <record id="propiedades_form_view" model="ir.ui.view">
+        <field name="name">propiedades.form.view</field>
+        <field name="model">bienes.raices</field>
+        <field name="type">form</field>
+        <field name="priority" eval="16" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <form string="Propiedades">
+                <sheet>
+                    <group>
+                        <field name='imagen' widget='image' class='oe.avatar'/>
+                        <field name="titulo"/>
+                        <field name="descripcion"/>
+                        <field name="categoria_id"/>
+                        <field name="codigo_postal"/>
+                        <field name="fecha_disponibilidad"/>
+                        <field name="dormitorios"/>
+                        <field name="sala"/>
+                        <field name="fachadas" />
+                        <field name="garaje"/>
+                        <field name="jardin"/>
+                        <field name="jardin_area"/>
+                        <field name="jardin_orientacion"/>
+                        <field name="precio"/>        
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!--Vista lista/tree para propiedades-->
+    <record id="view_tree_propiedades_ui" model="ir.ui.view">
+        <field name="name">propiedades.tree.view</field>
+        <field name="model">bienes.raices</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="fecha_disponibilidad"/>
+                <field name="titulo"/>
+                <field name="dormitorios"/>
+                <field name="categoria_id"/>
+                <field name="precio"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--Vista Kanban para propiedades-->
+    <record id="propiedades_kanban_view" model="ir.ui.view">
+        <field name="name">propiedades.kanabn.view</field>
+        <field name="model">bienes.raices</field>
+        <field name="type">kanban</field>
+        <field name="mode">primary</field>
+        <field name="priority" eval="16" />
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="titulo"/>
+                <field name="descripcion"/>
+                <field name="precio"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class='oe_kanban_global_click'>
+                            <div class='o_kanban_imagen'>
+                                <img t-att-src="kanban_imagen('bienes_raices','imagen',record.id.raw_value)" alt="Imagen"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!--Vista busqueda para propiedades-->
+    <record id="propiedades_view_search" model="ir.ui.view">
+        <field name="name">propiedades.view.search</field>
+        <field name="model">bienes.raices</field>
+        <field name="arch" type="xml">
+            <search>
+                <!--Busqueda rapida-->
+                <field name="titulo" string='Nombre de la propiedad'/>
+                <field name="codigo_postal" string='Numero postal'/>
+                <field name="precio" string='Precio estimado'/>
+                <field name="categoria_id" string='Nombre de la categoria'/>
+
+                <!--Filtro rapido-->
+                <filter name="Categoria" string="categoria" domain="[('categoria_id', '=', 'Libros')]"/>
+
+                <!--Agrupacion rapida-->
+                <group expand="0" string="Agrupar por" colspan='12' col='10'>
+                    <filter name="Categoria" string="categoria" context="{'group_by':'categoria_id'}"/>
+                </group>
+                <searchpanel>
+                    <field name="categoria_id" string='Categorias de las propiedades' icon='fa-users'/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+</odoo>
