@@ -71,6 +71,8 @@
                 <field name="titulo" string='Nombre de la propiedad'/>
                 <field name="codigo_postal" string='Numero postal'/>
                 <field name="precio" string='Precio estimado'/>
+                <field name="categoria_id" string='Nombre de la categoria'/>
+                <filter name="categoria" string="categoria" domain="[('categoria_id', '=', 'Libros')]"/>
             </search>
         </field>
     </record>
