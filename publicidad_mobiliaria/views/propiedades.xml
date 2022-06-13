@@ -11,7 +11,7 @@
             <form string="Propiedades">
                 <sheet>
                     <group>
-                        <field name="titulo"/>
+                        <field name='imagen' widget='image' class='oe.avatar'/>
                         <field name="descripcion"/>
                         <field name="codigo_postal"/>
                         <field name="precio"/>        
@@ -29,8 +29,7 @@
             <tree>
                 <field name="titulo"/>
                 <field name="descripcion"/>
-                <field name="codigo_postal"/>
-                <field name="precio"/> 
+                <field name="precio"/>
             </tree>
         </field>
     </record>
