@@ -14,6 +14,7 @@
                         <field name='imagen' widget='image' class='oe.avatar'/>
                         <field name="titulo"/>
                         <field name="descripcion"/>
+                        <field name="categoria_id" />
                         <field name="codigo_postal"/>
                         <field name="precio"/>        
                     </group>
@@ -30,6 +31,7 @@
             <tree>
                 <field name="titulo"/>
                 <field name="descripcion"/>
+                <field name="categoria_id"/>
                 <field name="precio"/>
             </tree>
         </field>
@@ -72,4 +74,5 @@
             </search>
         </field>
     </record>
+
 </odoo>
