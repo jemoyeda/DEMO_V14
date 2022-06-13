@@ -16,6 +16,14 @@
                         <field name="descripcion"/>
                         <field name="categoria_id" />
                         <field name="codigo_postal"/>
+                        <field name="fecha_disponibilidad"/>
+                        <field name="dormitorios"/>
+                        <field name="sala"/>
+                        <field name="fachadas" />
+                        <field name="garaje"/>
+                        <field name="jardin"/>
+                        <field name="jardin_area"/>
+                        <field name="jardin_orientacion"/>
                         <field name="precio"/>        
                     </group>
                 </sheet>
@@ -29,8 +37,9 @@
         <field name="model">bienes.raices</field>
         <field name="arch" type="xml">
             <tree>
+                <field name="fecha_disponibilidad"/>
                 <field name="titulo"/>
-                <field name="descripcion"/>
+                <field name="dormitorios"/>
                 <field name="categoria_id"/>
                 <field name="precio"/>
             </tree>

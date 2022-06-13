@@ -7,9 +7,22 @@ class bienes(models.Model):
     titulo = fields.Char(string='Titulo', required=True)
     descripcion  = fields.Text(string='Descripcion', required=True)
     codigo_postal  = fields.Char(string='Codigo postal')
-    precio  = fields.Float(string='Precio', required=True)
+    precio   = fields.Monetary(string='Precio', currency_field='currency_id')
     imagen  = fields.Binary(string='Foto de la propiedad')
     categoria_id = fields.Many2one(string='Categoria', comodel_name='categoria.bienes', ondelete='restrict')
+    fecha_disponibilidad  = fields.Date(string='Fecha de disponibilidad')
+    dormitorios  = fields.Integer(string='Dormitorios')
+    sala  = fields.Integer(string='Sala de estar')
+    fachadas  = fields.Integer(string='Fachadas')
+    garaje  = fields.Boolean(string='Garaje')
+    jardin  = fields.Boolean(string='Jardin')
+    jardin_area  = fields.Integer(string='Areas del jardin')
+    jardin_orientacion  = fields.Selection(string='Orientacion del jardin', selection=[
+        ('Norte', 'Norte')
+        ('Sur', 'Sur')        
+        ('Este', 'Este')
+        ('Oeste', 'Oeste')
+        ])
     
 
 class categoria(models.Model):
