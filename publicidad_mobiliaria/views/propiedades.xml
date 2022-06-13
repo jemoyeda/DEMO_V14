@@ -59,4 +59,17 @@
             </kanban>
         </field>
     </record>
+
+    <!--Vista busqueda para propiedades-->
+    <record id="propiedades_view_search" model="ir.ui.view">
+        <field name="name">propiedades.view.search</field>
+        <field name="model">bienes_raices</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="titulo" string='Nombre de la propiedad'/>
+                <field name="codigo_postal" string='Numero postal'/>
+                <field name="precio" string='Precio estimado'/>
+            </search>
+        </field>
+    </record>
 </odoo>
