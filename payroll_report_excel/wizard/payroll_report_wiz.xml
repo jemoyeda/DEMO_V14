@@ -36,7 +36,6 @@
     <record id="action_payroll_reporting_excel" model="ir.actions.act_window">
         <field name="name">Payroll Report</field>
         <field name="res_model">payroll.report.wiz</field>
-        <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>
