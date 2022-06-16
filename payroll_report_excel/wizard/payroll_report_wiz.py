@@ -19,7 +19,7 @@ class payrollreportexcelwiz(models.TransientModel):
     company = fields.Many2one('res.company', default=lambda self: self.env['res.company']._company_default_get(),
                               string="Company")
     #to get salary rules names
-    @api.multi
+
     def get_rules(self):
         vals = []
 
@@ -33,7 +33,7 @@ class payrollreportexcelwiz(models.TransientModel):
 
 
 
-    @api.multi
+
     def get_item_data(self):
         file_name = _('payroll report.xlsx')
         fp = BytesIO()
