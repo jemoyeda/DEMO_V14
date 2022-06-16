@@ -41,5 +41,5 @@
     </record>
 
     <menuitem id="menu_payroll_excel_report" name="Payroll Excel Report" action="action_payroll_reporting_excel"
-              parent="hr_payroll.menu_hr_payroll_root"/>
+              parent="hr_payroll.hr_payslip_run_tree"/>
 </odoo>
